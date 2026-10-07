@@ -1,0 +1,112 @@
+4. Results
+
+4.1 Model development and independent validation design
+
+The final Compact-8 model was developed using 199 labelled Etawah
+observations and eight Sentinel-2-derived predictors comprising median
+and mean MNDWI and NDWI, water fraction, and mean B8, B11, and B12
+reflectance. The frozen Gradient Boosting regression model was not
+retrained during either independent evaluation.
+
+Independent validation was conducted in two directions. First, temporal
+transfer was evaluated using 14 observations from 2024 at Etawah,
+with model fitting restricted to observations from 2021–2023. Second,
+spatial transfer was evaluated using 812 labelled observations from
+8 additional Yamuna monitoring stations and 521
+unique Sentinel-2 scenes. The spatial test therefore evaluated whether a
+model developed at Etawah could transfer to geographically distinct
+Yamuna reaches.
+
+4.2 Independent temporal validation
+
+The frozen Etawah model showed moderate association with the independent
+2024 observations. The temporal test produced an MAE of 26.269
+NTU and RMSE of 35.086 NTU. The coefficient of determination
+was 0.064, while Pearson correlation was 0.762. The
+observed-minus-predicted bias was -19.140 NTU, indicating a
+tendency toward overprediction on average.
+
+The small test sample (14 observations) limits the precision of
+these estimates. Nevertheless, the positive Pearson correlation indicates
+that the frozen model retained some temporal ordering of turbidity in
+2024, despite the relatively weak absolute calibration represented by
+the R² value.
+
+Temporal sensitivity analyses further indicated that clearer Sentinel-2
+observations generally had lower absolute error than highly cloudy
+observations. However, these subsets were small and should be interpreted
+as sensitivity analyses rather than independent estimates of model
+performance.
+
+4.3 Independent spatial validation
+
+Spatial transfer was substantially weaker than temporal transfer. Across
+the 812 labelled observations from 8 additional Yamuna
+stations, the frozen model produced an MAE of 68.647 NTU, RMSE of
+157.876 NTU, and R² of -0.107. Pearson correlation was
+0.236, and the observed-minus-predicted bias was 54.998
+NTU.
+
+The negative R² indicates that the frozen Etawah model did not provide
+reliable absolute spatial prediction across the expanded Yamuna test
+domain. The model systematically underestimated turbidity at many
+higher-turbidity stations. The best station-level MAE was
+27.661 NTU at Yamuna Highway Road Bridge, whereas the largest station
+MAE was 157.956 NTU at Mawi.
+
+4.4 Dependence on turbidity regime
+
+The dominant limitation of spatial transfer was the extreme turbidity
+regime. The spatial test contained 158 observations with turbidity
+at or above 100 NTU and 31 observations at or above 500 NTU.
+For the ≥100 NTU regime, MAE was 288.248 NTU and RMSE was 355.417 NTU.
+The model underpredicted 100% of observations in this regime.
+
+At lower turbidity levels, errors were substantially smaller. For
+observations below 100 NTU, MAE was approximately 15.594 NTU. The
+transition from the low and moderate regimes toward high and very-high
+turbidity therefore produced a pronounced degradation in predictive
+performance.
+
+4.5 Cloud and temporal-gap sensitivity
+
+Cloud contamination affected model performance, but it did not fully
+explain the spatial transfer failure. At cloud cover ≤20%, the spatial
+test MAE was approximately 38.344 NTU, compared with 108.031 NTU for
+observations with cloud cover >60%. However, high-turbidity observations
+under relatively clear conditions also remained poorly predicted.
+
+Similarly, restricting the temporal difference between the CWC
+observation and Sentinel-2 acquisition did not eliminate the spatial
+error. The MAE remained approximately 65.900 NTU for matches within
+0.5 day and 65.279 NTU for matches within 1.5 days.
+
+These results indicate that cloud contamination and temporal mismatch
+contribute to uncertainty but are not sufficient explanations for the
+observed lack of spatial transfer.
+
+4.6 Feature-distribution shift
+
+The spatial test exhibited measurable covariate shift relative to the
+Etawah training data. In particular, the spatial test showed shifts in
+NDWI/MNDWI distributions and higher mean B8, B11, and B12 values.
+Water-fraction distributions also differed between development and
+spatial datasets.
+
+These shifts are consistent with differences in river morphology,
+surrounding land cover, water conditions, atmospheric contamination,
+and acquisition conditions among the different Yamuna reaches. However,
+the magnitude of the shift alone does not explain the extreme
+underprediction observed above 100 NTU.
+
+4.7 Radiometric quality diagnostics
+
+A small subset of the spatial observations exhibited B8 mean values
+above 1 after Sentinel-2 processing. These observations were retained
+rather than automatically rescaled or removed because B11 and B12 did
+not exhibit the same behaviour and the affected observations were
+concentrated in cloudy scenes.
+
+The comparison between B8≤1 and B8>1 groups showed similar overall
+prediction error, indicating that the B8>1 observations were not the
+primary cause of the spatial transfer failure.

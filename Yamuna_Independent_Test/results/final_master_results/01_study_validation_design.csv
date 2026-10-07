@@ -1,0 +1,4 @@
+stage,location,role,observations,stations,sentinel2_groups,independence,status
+Development,Etawah,Model development and grouped cross-validation,199,1,99,5-fold GroupKFold by Sentinel-2 scene,Development model frozen
+Temporal independent test,Etawah,Unseen 2024 observations,14,1,14,2021–2023 training; 2024 testing,Independent test
+Spatial independent test,8 additional Yamuna stations,Unseen spatial transfer,812,8,521,Etawah observations excluded from spatial test,Independent test

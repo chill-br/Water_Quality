@@ -1,0 +1,9 @@
+check,result
+Development model retrained during testing,NO
+2024 temporal observations added to training,NO
+Spatial test observations added to training,NO
+Spatial predictions modified after Step 18,NO
+Temporal matching independently verified,YES
+Spatial matching independently verified,YES
+Spatial test prediction count,812
+Independent spatial stations,8

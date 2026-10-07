@@ -1,0 +1,8 @@
+finding_id,domain,finding,interpretation
+1,Development,The Compact-8 Gradient Boosting model provided the frozen Etawah development baseline under grouped Sentinel-2 cross-validation.,The model is suitable as the development-site baseline but does not establish Yamuna-wide transferability.
+2,Temporal transfer,The frozen model retained a positive association with independent 2024 Etawah observations.,"Temporal transfer shows potential, but the 2024 sample is small and absolute calibration remains limited."
+3,Spatial transfer,Performance declined substantially on eight unseen Yamuna stations.,The Etawah-trained model should not be treated as a Yamuna-wide transferable model.
+4,Extreme turbidity,Spatial error increased dramatically above 100 NTU.,The current Compact-8 formulation does not capture the extreme turbidity regime reliably.
+5,Cloud sensitivity,"Clearer scenes generally reduced absolute error, but substantial errors remained under low cloud.",Cloud contamination contributes to error but does not explain the spatial transfer failure.
+6,Temporal matching,Tightening the CWC–Sentinel-2 temporal gap did not eliminate spatial prediction error.,Temporal mismatch is not the dominant explanation for poor spatial transfer.
+7,Radiometric quality,Only a small fraction of spatial test observations had B8 mean values above 1.,The B8 > 1 issue is not sufficient to explain the overall spatial transfer failure.

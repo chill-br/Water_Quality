@@ -1,0 +1,79 @@
+5. Discussion
+
+5.1 Temporal stability versus spatial generalization
+
+The most important finding is the contrast between temporal and spatial
+transfer. The frozen Etawah model retained a Pearson correlation of
+0.762 on the independent 2024 test, whereas correlation decreased
+to 0.236 on the independent spatial test. This suggests that the
+spectral relationship learned at Etawah has some temporal persistence at
+the same monitoring location but is not sufficiently invariant across
+different Yamuna reaches.
+
+This distinction is important for remote-sensing water-quality modelling.
+A model can perform reasonably under repeated observations at a single
+site while still failing when applied to geographically different
+stations. Therefore, random observation-level validation alone would
+likely overstate the practical geographic generalizability of the model.
+
+5.2 Why extreme turbidity is difficult to transfer
+
+The strongest spatial failure occurred at turbidity concentrations above
+100 NTU. The model predicted values concentrated near the lower portion
+of the turbidity range even when observed concentrations reached several
+hundred NTU. This indicates a major regression-range limitation.
+
+The Etawah development dataset contained substantially fewer extreme
+events than the expanded spatial test. Consequently, the learned
+relationship between Sentinel-2 spectral response and very high turbidity
+was insufficient to represent the broader spatial domain.
+
+The station-level results reinforce this interpretation. Stations with
+larger proportions of observations above 100 NTU showed substantially
+larger spatial errors. This pattern indicates that the domain mismatch
+is not simply a random prediction error but is associated with the
+different turbidity regimes encountered along the Yamuna.
+
+5.3 Cloud contamination is a contributing, not dominant, factor
+
+Highly cloudy observations had larger errors, demonstrating that image
+quality remains an important practical limitation. Nevertheless, several
+of the largest spatial failures occurred under low or moderate cloud
+cover. In particular, extreme observed turbidity was still strongly
+underpredicted in relatively clear scenes.
+
+Therefore, simply applying a stricter cloud threshold would improve data
+quality but would not solve the fundamental spatial-transfer problem.
+Future models should combine cloud screening with improved representation
+of turbidity regimes and reach-specific environmental variability.
+
+5.4 Implications for operational monitoring
+
+The results suggest that the current Etawah-trained model should not be
+used as a Yamuna-wide operational turbidity estimator without additional
+training and independent validation.
+
+However, the study provides a useful framework for operational
+development. The matching pipeline, Sentinel-2 feature extraction,
+group-aware validation, temporal holdout, spatial holdout, and diagnostic
+workflow provide a reproducible basis for constructing a genuinely
+multi-reach model.
+
+The next model generation should incorporate observations from multiple
+stations spanning low, moderate, high, and extreme turbidity conditions.
+Importantly, spatially independent validation should remain part of the
+evaluation design rather than being replaced by random train-test
+splitting.
+
+5.5 Scientific significance
+
+The negative spatial R² should not be interpreted as a failure of
+Sentinel-2 remote sensing itself. Rather, it demonstrates the limitation
+of transferring a compact model calibrated at one river reach to a
+heterogeneous river system.
+
+The study therefore contributes a realistic assessment of model
+generalization. Instead of reporting only favourable development-site
+performance, the independent spatial experiment exposes the conditions
+under which the model fails and identifies extreme turbidity and domain
+shift as key areas requiring additional modelling effort.

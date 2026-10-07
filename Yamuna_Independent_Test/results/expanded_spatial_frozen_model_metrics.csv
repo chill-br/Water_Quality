@@ -1,0 +1,2 @@
+test_type,training_rows,verified_matches,usable_feature_rows,usable_labelled_rows,excluded_feature_rows,n,MAE_NTU,RMSE_NTU,R2,bias_observed_minus_predicted_NTU,Pearson_r,Pearson_p,observed_mean_NTU,predicted_mean_NTU,observed_median_NTU,predicted_median_NTU,underpredicted_count,underpredicted_percent
+Expanded independent spatial test,199,820,819,812,1,812,68.64741481030124,157.87560099757297,-0.10650613417023491,54.99846709625919,0.23594218410965562,9.80591984331794e-12,79.35272167487685,24.35425457861766,19.535,21.113554212861857,397,48.891625615763544

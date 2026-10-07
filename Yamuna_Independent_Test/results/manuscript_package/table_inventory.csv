@@ -1,0 +1,19 @@
+table_number,table_description,recommended_placement
+1,Study validation design,Main text
+2,Final validation performance,Main text
+3,Temporal 2024 category performance,Supplementary
+4,Spatial category performance,Main text
+5,Spatial station performance,Main text
+6,Temporal sensitivity analysis,Supplementary
+7,Spatial sensitivity and quality analysis,Supplementary
+8,Extreme turbidity summary,Main text
+9,Spatial extreme-event details,Supplementary
+10,Station extreme-turbidity burden,Main text
+11,Feature distribution shift,Main text
+12,Station feature shift,Supplementary
+13,High-turbidity cloud diagnostic,Supplementary
+14,Spatial underprediction by turbidity,Main text
+15,Final study findings,Supplementary
+16,Final numerical summary,Internal
+17,Publication-ready validation metrics,Main text
+18,Validation integrity,Supplementary

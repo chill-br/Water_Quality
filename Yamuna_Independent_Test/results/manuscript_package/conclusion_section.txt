@@ -1,0 +1,24 @@
+7. Conclusion
+
+A compact Sentinel-2-based Gradient Boosting model was developed for
+turbidity estimation using CWC observations at Etawah and was evaluated
+under independent temporal and spatial conditions.
+
+The frozen model showed moderate temporal association on unseen 2024
+Etawah observations, with MAE 26.269 NTU, RMSE 35.086 NTU,
+R² 0.064, and Pearson r 0.762. However, transfer to
+8 additional Yamuna stations resulted in substantially
+poorer performance, with MAE 68.647 NTU, RMSE 157.876 NTU,
+R² -0.107, and Pearson r 0.236.
+
+The spatial evaluation demonstrated that extreme turbidity was the
+dominant failure regime. Observations ≥100 NTU had MAE 288.248 NTU, and
+all observations in this regime were underpredicted. Cloud contamination
+and temporal matching affected error magnitude but did not fully explain
+the poor spatial transfer.
+
+The principal conclusion is therefore that an Etawah-calibrated compact
+Sentinel-2 model cannot yet be considered a reliable Yamuna-wide
+turbidity model. A robust regional model will require multi-station
+training, broader representation of extreme turbidity, improved feature
+engineering, and continued spatially independent validation.

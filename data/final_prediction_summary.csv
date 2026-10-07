@@ -1,0 +1,14 @@
+metric,value
+n_observations,199.0
+n_sentinel_groups,99.0
+observed_min_NTU,1.0
+observed_median_NTU,22.0
+observed_mean_NTU,36.46532663316583
+observed_max_NTU,344.0
+predicted_min_NTU,10.335695157583592
+predicted_median_NTU,24.013682701422827
+predicted_mean_NTU,33.0658282860249
+predicted_max_NTU,227.53273539698412
+MAE_NTU,22.9541306786454
+RMSE_NTU,41.5986544461797
+R2,0.23636527676604524

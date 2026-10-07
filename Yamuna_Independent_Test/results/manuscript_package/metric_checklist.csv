@@ -1,0 +1,19 @@
+metric,value,source
+Development N,199.0,Frozen Etawah development model
+Development MAE,22.954,Frozen Etawah development model
+Development RMSE,41.599,Frozen Etawah development model
+Development R2,0.236,Frozen Etawah development model
+Temporal N,14.0,Step 21
+Temporal MAE,26.26928007772353,Step 21
+Temporal RMSE,35.08591215701737,Step 21
+Temporal R2,0.0643731566076193,Step 21
+Temporal Pearson r,0.7618937478069618,Step 21
+Spatial N,812.0,Step 21
+Spatial stations,8.0,Step 21
+Spatial Sentinel-2 scenes,521.0,Step 21
+Spatial MAE,68.64741481030123,Step 21
+Spatial RMSE,157.87560099757297,Step 21
+Spatial R2,-0.1065061341702349,Step 21
+Spatial Pearson r,0.2359421841096556,Step 21
+Spatial observations >=100 NTU,158.0,Frozen spatial predictions
+Spatial observations >=500 NTU,31.0,Frozen spatial predictions

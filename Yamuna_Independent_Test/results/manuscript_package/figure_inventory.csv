@@ -1,0 +1,40 @@
+figure_number,filename_stem,scientific_role,recommended_placement
+1,01_observed_vs_predicted,Development,Main text
+2,02_residual_analysis,Development,Main text
+3,03_turbidity_distribution,Development,Main text
+4,04_category_comparison,Development,Supplementary
+5,05_feature_correlations,Development,Supplementary
+6,06_residual_distribution,Development,Supplementary
+7,07_extreme_event_predictions,Development,Main text
+8,08_spatial_observed_vs_predicted,Spatial validation,Main text
+9,09_spatial_residuals,Spatial validation,Main text
+10,10_station_MAE,Spatial validation,Main text
+11,11_station_R2,Spatial validation,Main text
+12,12_spatial_category_comparison,Spatial validation,Main text
+13,13_spatial_extreme_events,Spatial validation,Main text
+14,14_temporal_observed_vs_predicted_2024,Temporal validation,Main text
+15,15_temporal_residuals_2024,Temporal validation,Main text
+16,16_temporal_cloud_vs_error_2024,Temporal diagnostics,Supplementary
+17,17_temporal_gap_vs_error_2024,Temporal diagnostics,Supplementary
+18,18_temporal_2024_observed_predicted_series,Temporal validation,Main text
+19,19_temporal_2024_error_ranking,Temporal diagnostics,Supplementary
+20,20_temporal_cloud_group_mae_2024,Temporal diagnostics,Supplementary
+21,21_temporal_gap_group_mae_2024,Temporal diagnostics,Supplementary
+22,22_spatial_final_observed_vs_predicted,Final spatial validation,Main text
+23,23_spatial_final_log_observed_vs_predicted,Final spatial validation,Main text
+24,24_spatial_final_residuals,Final spatial validation,Main text
+25,25_spatial_final_residuals_vs_predicted,Final spatial validation,Main text
+26,26_spatial_final_station_MAE,Station validation,Main text
+27,27_spatial_final_station_R2,Station validation,Main text
+28,28_spatial_final_station_bias,Station diagnostics,Supplementary
+29,29_spatial_final_category_MAE,Turbidity regimes,Main text
+30,30_spatial_final_category_observed_predicted,Turbidity regimes,Main text
+31,31_spatial_final_extreme_events,Extreme turbidity,Main text
+32,32_spatial_final_cloud_vs_error,Spatial diagnostics,Supplementary
+33,33_spatial_final_temporal_gap_vs_error,Spatial diagnostics,Supplementary
+34,34_spatial_final_observed_turbidity_distribution,Spatial data,Main text
+35,35_spatial_final_log_turbidity_distribution,Spatial data,Supplementary
+36,36_spatial_final_feature_distribution_shift,Domain shift,Main text
+37,37_spatial_final_station_extreme_burden,Domain shift,Main text
+38,38_spatial_final_high_turbidity_cloud_MAE,Diagnostics,Supplementary
+39,39_spatial_final_station_observed_predicted_means,Station validation,Main text

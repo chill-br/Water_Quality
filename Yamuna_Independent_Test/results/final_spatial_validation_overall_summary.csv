@@ -1,0 +1,2 @@
+validation,n,MAE_NTU,RMSE_NTU,R2,bias_observed_minus_predicted_NTU,Pearson_r,Pearson_p,observed_mean_NTU,predicted_mean_NTU,observed_median_NTU,predicted_median_NTU,observed_min_NTU,observed_max_NTU,underpredicted_percent
+Independent spatial test,812,68.64741481030123,157.87560099757297,-0.10650613417023491,54.99846709625919,0.2359421841096556,9.80591984331794e-12,79.35272167487685,24.35425457861766,19.535,21.113554212861857,0.9,850.0,48.891625615763544

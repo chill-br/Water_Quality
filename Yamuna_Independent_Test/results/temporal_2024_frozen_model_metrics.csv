@@ -1,0 +1,2 @@
+test_year,n_test,training_years,MAE_NTU,RMSE_NTU,R2,bias_observed_minus_predicted_NTU,Pearson_r,Pearson_p,observed_mean_NTU,predicted_mean_NTU,observed_median_NTU,predicted_median_NTU,underprediction_count,underprediction_percent
+2024,14,2021-2023,26.269280077723526,35.08591215701737,0.06437315660761933,-19.14002549386642,0.7618937478069617,0.0015402120956151115,33.542857142857144,52.68288263672356,20.3,36.926887008692674,5,35.714285714285715

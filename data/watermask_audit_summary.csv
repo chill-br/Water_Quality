@@ -1,0 +1,2 @@
+patch_count,minimum,p05,median,mean,p95,maximum,zero_water_fraction_patches,full_water_fraction_patches,between_0_and_1
+199,0.0,0.0,0.49489795918367346,0.48734054889833783,1.0,1.0,20,28,151

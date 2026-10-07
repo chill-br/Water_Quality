@@ -1,0 +1,22 @@
+VALIDATION INTEGRITY STATEMENT
+
+The manuscript package was generated exclusively from the frozen
+development model and independently generated temporal and spatial
+validation outputs.
+
+No model retraining was performed during Step 22.
+
+No temporal or spatial test observations were added to model training.
+
+No prediction values were modified.
+
+No hyperparameter optimization was performed using the independent
+temporal or spatial test observations.
+
+The corrected CWC–Sentinel-2 temporal matching workflow was used.
+
+The independent spatial test consisted of additional Yamuna monitoring
+stations not used for development of the Etawah model.
+
+The previous invalid temporal evaluation based on inconsistent stored
+date metadata is excluded from all manuscript results.

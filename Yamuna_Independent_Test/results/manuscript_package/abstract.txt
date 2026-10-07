@@ -1,0 +1,36 @@
+Abstract
+
+Remote sensing offers an opportunity to complement conventional river
+water-quality monitoring, but models developed at individual monitoring
+locations may not transfer reliably across heterogeneous river reaches.
+This study evaluated a Sentinel-2-based machine-learning framework for
+turbidity estimation in the Yamuna River using Central Water Commission
+(CWC) observations and compact spectral and water-index features. A
+Gradient Boosting regression model using eight Sentinel-2-derived
+features was developed at Etawah from 199 labelled observations and
+evaluated using grouped cross-validation by Sentinel-2 acquisition.
+
+The frozen model was subsequently evaluated without retraining on two
+independent datasets: a temporal test consisting of 14 unseen 2024
+Etawah observations and a spatial test consisting of 812 observations
+from 8 additional Yamuna monitoring stations represented by
+521 unique Sentinel-2 scenes. The temporal test produced an MAE
+of 26.269 NTU, RMSE of 35.086 NTU, R² of 0.064,
+and Pearson correlation of 0.762. Spatial transfer was substantially
+weaker, with MAE 68.647 NTU, RMSE 157.876 NTU, R²
+-0.107, and Pearson correlation 0.236.
+
+Spatial errors were strongly dependent on the turbidity regime. For
+observations above 100 NTU, MAE increased to 288.248 NTU, while all
+observations above 100 NTU were underpredicted. The spatial dataset
+contained 31 observations above 500 NTU. Cloud contamination and
+feature-distribution shifts contributed to uncertainty, but clear-sky
+high-turbidity observations also exhibited large errors, indicating that
+cloud alone could not explain the limited spatial transfer.
+
+These results demonstrate that the frozen Etawah model retains useful
+temporal association but has limited spatial generalizability across the
+Yamuna, particularly under extreme turbidity conditions. Future work
+should therefore emphasize multi-reach training, broader turbidity
+coverage, physically informed features, and independent spatial
+validation before operational deployment.
